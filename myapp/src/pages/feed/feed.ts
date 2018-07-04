@@ -14,8 +14,13 @@ export class FeedPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  public somaDoisNumeros(num1:number, num2:number): void{
+    alert(num1 + num2);
+  }
+
+  //executa sempre que a pagina é carregada
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FeedPage');
+    this.somaDoisNumeros(1, 2);
   }
 
 }
