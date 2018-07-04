@@ -10,4 +10,5 @@ import { FeedPage } from './feed';
     IonicPageModule.forChild(FeedPage),
   ],
 })
+/* nome do modulo */
 export class FeedPageModule {}

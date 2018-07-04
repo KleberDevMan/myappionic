@@ -1,5 +1,5 @@
 
-//aqui é declarado componentes iniciais e modulos
+//faz o importe de arquivos .ts (modulos e paginas)
 
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,6 +18,7 @@ import { FeedPageModule } from '../pages/feed/feed.module';
 
 //modulo prinicipal
 @NgModule({
+  /** paginas */
   declarations: [
     MyApp,
     AboutPage,
@@ -25,11 +26,13 @@ import { FeedPageModule } from '../pages/feed/feed.module';
     HomePage,
     TabsPage
   ],
+  /** modulos */
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     FeedPageModule
   ],
+
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
